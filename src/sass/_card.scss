@@ -1,0 +1,55 @@
+.container-card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+
+  &:active{
+    box-shadow: none;
+  }
+
+  h5{
+    color: $colorUtecDark;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  p{
+    color: $colorBlackLight;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    line-height: 20px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  span{
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    font-family: 'Robot', sans-serif;
+    font-size: 0.8rem;
+    color: $colorGray;
+  }
+  .icon{
+    color: $colorUtec;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+.conte-img-card{
+  width: 100%;
+  padding: 8px;
+}
+.img-card{
+  max-width: 100%;
+  border-radius: 5px;
+}

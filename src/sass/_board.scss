@@ -1,0 +1,33 @@
+.container-board{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  max-width: 100%;
+  width: calc(100% - 250px);
+  transition: width 0.4s ease;
+}
+.class-grow-board{
+  width: 100%;
+}
+.container-header-board{
+  display: flex;
+  height: 55px;
+  align-items: center;
+  background-color: $colorBlackLight;
+  color: $colorUtec;
+  padding: 0 30px;
+}
+.title-h4-board{
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+.content-ul-board{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  li{
+    margin: 10px 7px;
+  }
+}

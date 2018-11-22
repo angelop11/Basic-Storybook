@@ -1,0 +1,86 @@
+//NotificationS--------------------------------------
+#root{
+  position: relative;
+
+  & > .container-body-notifications{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+}
+.container-body-notifications {
+  width: 380px;
+  height: 420px;
+  background-color: $colorWhite;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow-y: hidden;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 100%;
+  right: -15px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in;
+
+  .list-body-notifications {
+    overflow-y: scroll;
+    max-height: 100%;
+  }
+
+  h3{
+    display: flex;
+    height: 30px;
+    border-bottom: 1px solid $colorGrayLight;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    color: $colorBlackLight
+  }
+}
+.notifications-active{
+  opacity: 1;
+  visibility: visible;
+}
+//Notification--------------------------------------
+.container-body-notification{
+  position: relative;
+  height: 100px;
+  border-bottom: 1px solid $colorGrayLight;
+  padding: 10px 12px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $colorGrayLight;
+  }
+
+  h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: $colorGray;
+    margin-bottom: 5px;
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    $color: $colorBlackLight;
+  }
+  span{
+    position: absolute;
+    bottom: 8px;
+    left: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    color: $colorGray;
+  }
+  .icon-body-notification{
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    color: $colorGray;
+    font-size: 0.7rem;
+  }
+}
